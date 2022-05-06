@@ -4,8 +4,8 @@ function getDatabaseConfig(): array
 {
   $host = "localhost";
   $port = 3306;
-  $dbNameProd = "db_chelsea-fc_phpmvc";
-  $dbNameTest = "db_chelsea-fc_phpmvc_test";
+  $dbNameProd = "db_project-01_chelsea-fc";
+  $dbNameTest = "db_project-01_chelsea-fc_test";
   $username = "root";
   $password = "";
 
