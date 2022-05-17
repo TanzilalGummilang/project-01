@@ -3,23 +3,23 @@
     - C:\Windows\System32\drivers\etc\hosts
     - save sebagai administrator
     - contohnya:
-      127.0.0.1 project-01.hehe
+      127.0.0.1 project-01.tanzilal
   }
   ## bikin vhost {
     - xampp\apache\conf\extra\httpd-vhost.conf
     - copas dari yg sebelumnya jika ada atau dummy yg di atasnya, sesuaikan nama-nama nya
     - ini contohnya:
-      <VirtualHost project-01.ehehe:80>
-        ServerAdmin admin@project-01.ehehe
+      <VirtualHost project-01.tanzilal:80>
+        ServerAdmin admin@project-01.tanzilal
         DocumentRoot "C:/xampp/htdocs/tg/project-01/public"
-        ServerName project-01.ehehe
-        ErrorLog "logs/project-01.ehehe.error.log"
-        CustomLog "logs/project-01.ehehe-access.log" common
+        ServerName project-01.tanzilal
+        ErrorLog "logs/project-01.tanzilal.error.log"
+        CustomLog "logs/project-01.tanzilal-access.log" common
       </VirtualHost>
   }
   ## setelah beres restart xampp nya
   ## pada vhost DocumentRoot di bagian akhirnya 'public', ini dilakukan agar hanya folder public yg bisa diakses
-  ## bisa mengetikan nama local domain 'project-01.tanzilal' di url utk buka project kita
+  ## bisa mengetikan nama local domain co: 'project-01.tanzilal' di url utk buka project kita
   ## lalu jika error copas .htaccess masukan ke public
-  ## semua langkah diatas boleh dilakukan boleh tidak
+  ## langkah2 diatas sepertinya harus dilakukan (jika pake xampp), karena jika tidak dilakukan dan ingin membuka project ini langsung melalui url browser http://localhost/namafile...bla...bla/public, fiturnya tidak akan jalan (saya juga tidak tau kenapa dan sedang caritau kenapa hehe..). jadi lakukan bikin local domain dan vhostnya sesuaikan nama2nya sesuai kebutuhan tidak harus sama persis seperti yg diatas
 }

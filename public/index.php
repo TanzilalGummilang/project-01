@@ -17,5 +17,8 @@ Router::add('GET', '/', HomeController::class, 'index', []);
 // squad
 Router::add('GET', '/player', PlayerController::class, 'index', []);
 
+// player detail
+Router::add('GET', '/detail/([0-9a-zA-Z]*)', PlayerController::class, 'detail', []);
+
 
 Router::run();
